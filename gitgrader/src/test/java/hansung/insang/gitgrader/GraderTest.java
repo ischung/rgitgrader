@@ -27,9 +27,16 @@ public class GraderTest {
 		Grade g = Grader.calculate_grade(40,35);
 		assertEquals(Grade.B, g);
 	}
+
 	@Test(expected=InvalidInputException.class)	
 	public void test_calculate_grade5() {		
 		Grade g = Grader.calculate_grade(20,0);
+	}
+
+	
+	@Test(expected=InvalidInputException.class)
+	public void test_calculate_grade6() {
+		Grade g = Grader.calculate_grade(-20,35);
 	}
 
 
