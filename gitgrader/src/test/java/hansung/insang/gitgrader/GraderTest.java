@@ -21,5 +21,12 @@ public class GraderTest {
 		Grade g = Grader.calculate_grade(40,40);
 		assertEquals(Grade.A, g);
 	}
+	
+	@Test
+	public void test_calculate_grade4() {
+		Grade g = Grader.calculate_grade(40,35);
+		assertEquals(Grade.B, g);
+	}
+
 
 }
