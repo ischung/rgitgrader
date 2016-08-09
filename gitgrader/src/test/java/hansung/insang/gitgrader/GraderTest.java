@@ -39,5 +39,9 @@ public class GraderTest {
 		Grade g = Grader.calculate_grade(-20,35);
 	}
 
+	@Test(expected=InvalidInputException.class)
+	public void test_calculate_grade7() {
+		Grade g = Grader.calculate_grade(-20,-35);
+	}
 
 }
